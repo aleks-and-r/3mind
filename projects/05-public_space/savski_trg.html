@@ -280,34 +280,24 @@
             });
         </script> -->
 				<script>
-					this.window.onload = function () {
-					if (typeof history.pushState === "function") {
-					history.pushState("jibberish", null, null);
-					window.onpopstate = function () {
-					console.log(location.pathname);
-					history.pushState('', null, '/work/public_space.html');
-					location.reload()
-					// Handle the back (or forward) buttons here
-					// Will NOT handle refresh, use onbeforeunload for this.
-					};
-					}
-					else {
-					var ignoreHashChange = true;
-					window.onhashchange = function () {
-					if (!ignoreHashChange) {
-					ignoreHashChange = true;
-					window.location.hash = Math.random();
-					// Detect and redirect change here
-					// Works in older FF and IE9
-					// * it does mess with your hash symbol (anchor?) pound sign
-					// delimiter on the end of the URL
-					}
-					else {
-					ignoreHashChange = false;
-					}
-					};
-					}
-					}
-				</script>
+          window.addEventListener('popstate', function (event) {
+            // The popstate event is fired each time when the current history entry changes.
+            var r = true;
+            if (r == true) {
+              // Call Back button programmatically as per user confirmation.
+              console.log('r is true');
+              location.pathname = '/work/public_space.html';
+              // history.back();
+              // Uncomment below line to redirect to the previous page instead.
+              // window.location = document.referrer // Note: IE11 is not supporting this.
+            } else {
+              // Stay on the current page.
+              // history.pushState(null, null, window.location.pathname);
+              // location.pathname = '/work/residental.html'
+            }
+            // location.pathname = '/work/residental.html'
+            // history.pushState(null, null, window.location.pathname);
+          }, false);
+        </script>
     </body>
 </html>

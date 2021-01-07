@@ -250,27 +250,24 @@
             });
         </script> -->
   <script>
-    window.onbeforeunload = function () { return location.pathname = 'work/administrative.html' };
-
-    // window.addEventListener('popstate', function (event) {
-    //   // The popstate event is fired each time when the current history entry changes.
-    //   var r = true;
-    //   if (r == true) {
-    //     // Call Back button programmatically as per user confirmation.
-    //     console.log('r is true');
-    //     location.pathname = 'work/administrative.html'
-    //     location.reload()
-    //     // history.back();
-    //     // Uncomment below line to redirect to the previous page instead.
-    //     // window.location = document.referrer // Note: IE11 is not supporting this.
-    //   } else {
-    //     // Stay on the current page.
-    //     // history.pushState(null, null, window.location.pathname);
-    //     location.pathname = 'work/administrative.html'
-    //   }
-    //   location.pathname = 'work/administrative.html'
-    //   // history.pushState(null, null, window.location.pathname);
-    // }, false);
+    window.addEventListener('popstate', function (event) {
+      // The popstate event is fired each time when the current history entry changes.
+      var r = true;
+      if (r == true) {
+        // Call Back button programmatically as per user confirmation.
+        console.log('r is true');
+        location.pathname = '/work/administrative.html';
+        // history.back();
+        // Uncomment below line to redirect to the previous page instead.
+        // window.location = document.referrer // Note: IE11 is not supporting this.
+      } else {
+        // Stay on the current page.
+        // history.pushState(null, null, window.location.pathname);
+        // location.pathname = '/work/residental.html'
+      }
+      // location.pathname = '/work/residental.html'
+      // history.pushState(null, null, window.location.pathname);
+    }, false);
   </script>
 </body>
 

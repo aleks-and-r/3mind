@@ -31,7 +31,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="../js/modernizr.js"></script>
   <script src="../js/custom.js"></script>
-
+<script src="../functions.js"></script>
 </head>
 
 <body>
@@ -57,7 +57,7 @@
               </li>
 
               <li>
-                <a  data-type="red" href="#0">Residential</a>
+                <a data-type="red" href="#0">Residential</a>
               </li>
 
               <li>
@@ -160,7 +160,8 @@
               <ul class="cd-item-wrapper resize-item">
                 <li data-type="red" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/01-residential/ovca.html">
+                    <!-- <a href="../projects/01-residential/ovca.html"> -->
+                    <a onclick="ovca()" href="../projects/01-residential/ovca.html">
                       <div class="pic"
                         style="background-image:url(../images/projects/01-residential/01-preview/ovca-01.jpg)"
                         alt="Social Housing _ OVČA | Belgrade | Mentioned | author Ilja Mikitisin"></div>
@@ -173,7 +174,8 @@
 
                 <li data-type="blue" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/02-commercial/carine.html">
+                    <!-- <a href="../projects/02-commercial/carine.html"> -->
+                    <a onclick="carine()">
                       <div class="pic"
                         style="background-image:url(../images/projects/02-commercial/01-preview/baosici-01.jpg)"
                         alt="Hotel Complex _ CARINE | Baošići | author Ilja Mikitisin"></div>
@@ -186,7 +188,8 @@
 
                 <li data-type="green" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/04-culture/sipcanik.html">
+                    <!-- <a href="../projects/04-culture/sipcanik.html"> -->
+                    <a onclick="sipcanik()">
                       <div class="pic"
                         style="background-image:url(../images/projects/04-culture/01-preview/sipcanik-01.jpg)"
                         alt="Wine Villge _ SIPCANIK | Podgorica | author Ilja Mikitisin"></div>
@@ -199,7 +202,8 @@
 
                 <li data-type="yellow" class="is-visible">
                   <div class="item">
-                    <a href="../projects/03-administrative/bg_conference.html">
+                    <!-- <a href="../projects/03-administrative/bg_conference.html"> -->
+                    <a onclick="conference()">
                       <div class="pic"
                         style="background-image:url(../images/projects/03-administrative/01-preview/sajam-01.jpg)"
                         alt="Conference Centre _ BELGRADE FAIR | Belgrade | author Ilja Mikitisin"></div>
@@ -212,7 +216,8 @@
 
                 <li data-type="black" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/05-public_space/savski_trg.html">
+                    <!-- <a href="../projects/05-public_space/savski_trg.html"> -->
+                    <a onclick="savskitrg()">
                       <div class="pic"
                         style="background-image:url(../images/projects/05-public_space/01-preview/savski-01.jpg)"
                         alt="Savski Square _ BW | Belgrade | author Ilja Mikitisin"></div>
@@ -225,7 +230,8 @@
 
                 <li data-type="purple" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/06-interior/jevremova.html">
+                    <!-- <a href="../projects/06-interior/jevremova.html"> -->
+                      <a onclick="jevremova()">
                       <div class="pic"
                         style="background-image:url(../images/projects/06-interior/01-preview/jevremova-01.jpg)"
                         alt="Apartment Interor _ JEVREMOVA 2 | Belgrade | author Igor Mikitisin"></div>
@@ -242,7 +248,8 @@
               <ul class="cd-item-wrapper resize-item">
                 <li data-type="red" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/01-residential/rasadnik.html">
+                    <!-- <a href="../projects/01-residential/rasadnik.html"> -->
+                      <a onclick="rasadnik()">
                       <div class="pic"
                         style="background-image:url(../images/projects/01-residential/01-preview/rasadnik-01.jpg)"
                         alt="Residential Building _ RASADNIK | Lazarevac | author Ilja Mikitisin"></div>
@@ -255,7 +262,8 @@
 
                 <li data-type="blue" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/02-commercial/ulcinj.html">
+                    <!-- <a href="../projects/02-commercial/ulcinj.html"> -->
+                      <a onclick="ulcinj()">
                       <div class="pic"
                         style="background-image:url(../images/projects/02-commercial/01-preview/ulcinj-01.jpg)"
                         alt="Hotel Complex _ MONTENEGRO STAR | Ulcinj | author Ilja Mikitisin"></div>
@@ -268,7 +276,8 @@
 
                 <li data-type="green" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/04-culture/ns_library.html">
+                    <!-- <a href="../projects/04-culture/ns_library.html"> -->
+                      <a onclick="savskitrg()">
                       <div class="pic"
                         style="background-image:url(../images/projects/04-culture/01-preview/libraryns-01.jpg)"
                         alt="City Library _ CITY LIBRARY | Novi Sad | author Ilja Mikitisin"></div>
@@ -295,7 +304,8 @@
 
                 <li data-type="black" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/05-public_space/cer.html">
+                    <!-- <a href="../projects/05-public_space/cer.html"> -->
+                      <a onclick="cer()">
                       <div class="pic"
                         style="background-image:url(../images/projects/05-public_space/01-preview/cer-01.jpg)"
                         alt="Cer Memorial Complex_ CER | Cer | author Ilja Mikitisin / Igor Mikitisin"></div>
@@ -308,7 +318,8 @@
 
                 <li data-type="purple" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/06-interior/spa_centre.html">
+                    <!-- <a href="../projects/06-interior/spa_centre.html"> -->
+                      <a onclick="spa_centre()">
                       <div class="pic"
                         style="background-image:url(../images/projects/06-interior/01-preview/spa-01.jpg)"
                         alt="SPA CEntar _ MINAQUA | Novi Sad | author Igor Mikitisin"></div>
@@ -325,7 +336,8 @@
               <ul class="cd-item-wrapper resize-item">
                 <li data-type="red" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/01-residential/kamendin.html">
+                    <!-- <a href="../projects/01-residential/kamendin.html"> -->
+                      <a onclick="kamendin()">
                       <div class="pic"
                         style="background-image:url(../images/projects/01-residential/01-preview/kamendin-01.jpg)"
                         alt="Social Housing _ KAMENDIN | Belgrade | author Ilja Mikitisin"></div>
@@ -338,7 +350,8 @@
 
                 <li data-type="blue" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/02-commercial/igalo.html">
+                    <!-- <a href="../projects/02-commercial/igalo.html"> -->
+                      <a onclick="igalo()">
                       <div class="pic"
                         style="background-image:url(../images/projects/02-commercial/01-preview/igalo-01.jpg)"
                         alt="Hotel Complex _ IGALO | Igalo | author Ilja Mikitisin"></div>
@@ -351,7 +364,8 @@
 
                 <li data-type="green" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/04-culture/ugm.html">
+                    <!-- <a href="../projects/04-culture/ugm.html"> -->
+                      <a onclick="ugm()">
                       <div class="pic" style="background-image:url(../images/projects/04-culture/01-preview/ugm-01.jpg)"
                         alt="Art Gallery _ UGM | Maribor | author Ilja Mikitisin"></div>
                       <div class="fade"></div>
@@ -363,7 +377,8 @@
 
                 <li data-type="yellow" class="is-visible">
                   <div class="item">
-                    <a href="../projects/03-administrative/radnicka.html">
+                    <!-- <a href="../projects/03-administrative/radnicka.html"> -->
+                    <a onclick="municipality()">
                       <div class="pic"
                         style="background-image:url(../images/projects/03-administrative/01-preview/radnicka-01.jpg)"
                         alt="Administrative Building _ MULTIFUCNTION CENTRE | Novi Sad | author Ilja Mikitisin"></div>
@@ -376,7 +391,8 @@
 
                 <li data-type="black" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/05-public_space/dadov.html">
+                    <!-- <a href="../projects/05-public_space/dadov.html"> -->
+                      <a onclick="dadov()">
                       <div class="pic"
                         style="background-image:url(../images/projects/05-public_space/01-preview/dadov-01.jpg)"
                         alt="Dadov _ BELGRADE | Belgrade | author Igor Mikitisin"></div>
@@ -389,7 +405,8 @@
 
                 <li data-type="purple" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/06-interior/addiko.html">
+                    <!-- <a href="../projects/06-interior/addiko.html"> -->
+                      <a onclick="addiko()">
                       <div class="pic"
                         style="background-image:url(../images/projects/06-interior/01-preview/addiko-01.jpg)"
                         alt="Interior Addiko Bank _ SM PROMENADA | Novi Sad | author Igor Mikitisin"></div>
@@ -406,7 +423,8 @@
               <ul class="cd-item-wrapper resize-item">
                 <li data-type="red" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/01-residential/ribnjak.html">
+                    <!-- <a href="../projects/01-residential/ribnjak.html"> -->
+                      <a onclick="ribnjak()">
                       <div class="pic"
                         style="background-image:url(../images/projects/01-residential/01-preview/ribnjak-01.jpg)"
                         alt="Riverside House _ RIBNJAK | Petrovaradin | author Ilja Mikitisin"></div>
@@ -419,7 +437,8 @@
 
                 <li data-type="blue" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/02-commercial/pariski_magazin.html">
+                    <!-- <a href="../projects/02-commercial/pariski_magazin.html"> -->
+                      <a onclick="pariski_magazin()">
                       <div class="pic"
                         style="background-image:url(../images/projects/02-commercial/01-preview/pariski-01.jpg)"
                         alt="Interpolation in Cultural Heritage _ PARISKI MAGAZIN | Novi Sad | author Ilja Mikitisin">
@@ -433,7 +452,8 @@
 
                 <li data-type="green" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/04-culture/beton_hala.html">
+                    <!-- <a href="../projects/04-culture/beton_hala.html"> -->
+                      <a onclick="hala()">
                       <div class="pic"
                         style="background-image:url(../images/projects/04-culture/01-preview/beton-01.jpg)"
                         alt="Waterfront Centre _ BETON HALA | Belgrade | author Ilja Mikitisin"></div>
@@ -447,20 +467,22 @@
                 <li data-type="yellow" class="is-visible">
                   <div class="item">
                     <a href="../projects/03-administrative/canu.html">
-                      <div class="pic"
-                        style="background-image:url(../images/projects/03-administrative/01-preview/canu-01.jpg)"
-                        alt="National Academy of Science and Art _ CANU | Podgorica | author Ilja Mikitisin/ Igor Mikitisin">
-                      </div>
-                      <div class="fade"></div>
-                      <div class="title"><span>National Academy</span> | Podgorica</div>
-                      <div class="subtitle">Administrative Building | 2017</div>
-                    </a>
+                      <a onclick="academy()">
+                        <div class="pic"
+                          style="background-image:url(../images/projects/03-administrative/01-preview/canu-01.jpg)"
+                          alt="National Academy of Science and Art _ CANU | Podgorica | author Ilja Mikitisin/ Igor Mikitisin">
+                        </div>
+                        <div class="fade"></div>
+                        <div class="title"><span>National Academy</span> | Podgorica</div>
+                        <div class="subtitle">Administrative Building | 2017</div>
+                      </a>
                   </div>
                 </li>
 
                 <li data-type="black" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/05-public_space/railway_station.html">
+                    <!-- <a href="../projects/05-public_space/railway_station.html"> -->
+                      <a onclick="railway()">
                       <div class="pic"
                         style="background-image:url(../images/projects/05-public_space/01-preview/railway-01.jpg)"
                         alt="Railway Station _ BLOCK 42 | Belgrade | author Ilja Mikitisin"></div>
@@ -472,7 +494,8 @@
 
                 <li data-type="purple" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/06-interior/tent_a.html">
+                    <!-- <a href="../projects/06-interior/tent_a.html"> -->
+                      <a onclick="tent_a()">
                       <div class="pic"
                         style="background-image:url(../images/projects/06-interior/01-preview/tent-01.jpg)"
                         alt="Interior Entrance Hall _ TENT A | Obrenovac | author Ilja Mikitisin"></div>
@@ -490,6 +513,7 @@
                 <li data-type="red" class="is-hidden">
                   <div class="item">
                     <a href="../projects/01-residential/niksic.html">
+                      <a onclick="niksic()">
                       <div class="pic"
                         style="background-image:url(../images/projects/01-residential/01-preview/niksic-01.jpg)"
                         alt="Student Dorm _ NIKŠIĆ | Nikšić | Mentioned | author Ilja Mikitisin"></div>
@@ -503,6 +527,7 @@
                 <li data-type="blue" class="is-hidden">
                   <div class="item">
                     <a href="../projects/02-commercial/nork.html">
+                      <a onclick="nork()">
                       <div class="pic"
                         style="background-image:url(../images/projects/02-commercial/01-preview/nork-01.jpg)"
                         alt="Commercial Centre_NEW NORK | Novi Sad| author Ilja Mikitisin"></div>
@@ -516,6 +541,7 @@
                 <li data-type="green" class="is-hidden">
                   <div class="item">
                     <a href="../projects/04-culture/museum.html">
+                      <a onclick="museum()">
                       <div class="pic"
                         style="background-image:url(../images/projects/04-culture/01-preview/narodni-01.jpg)"
                         alt="National Museum _ NARODNI MUZEJ | Belgrade | Mentioned | author Ilja Mikitisin"></div>
@@ -529,19 +555,21 @@
                 <li data-type="yellow" class="is-visible">
                   <div class="item">
                     <a href="../projects/03-administrative/matijevic.html">
-                      <div class="pic"
-                        style="background-image:url(../images/projects/03-administrative/01-preview/matijevic-01.jpg)"
-                        alt="Office Building _ BOULEVARD | Novi Sad | Third Prize | author Ilja Mikitisin"></div>
-                      <div class="fade"></div>
-                      <div class="title"><span>Boulevard Centre</span> | Novi Sad</div>
-                      <div class="subtitle">Office Building | 2009</div>
-                    </a>
+                      <a onclick="boulevard()">
+                        <div class="pic"
+                          style="background-image:url(../images/projects/03-administrative/01-preview/matijevic-01.jpg)"
+                          alt="Office Building _ BOULEVARD | Novi Sad | Third Prize | author Ilja Mikitisin"></div>
+                        <div class="fade"></div>
+                        <div class="title"><span>Boulevard Centre</span> | Novi Sad</div>
+                        <div class="subtitle">Office Building | 2009</div>
+                      </a>
                   </div>
                 </li>
 
                 <li data-type="black" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/05-public_space/obeda.html">
+                    <!-- <a href="../projects/05-public_space/obeda.html"> -->
+                      <a onclick="obeda()">
                       <div class="pic"
                         style="background-image:url(../images/projects/05-public_space/01-preview/obeda-01.jpg)"
                         alt="Bird Observatory _ OBEDA | Obedska Bara | author Ilja Mikitisin"></div>
@@ -555,6 +583,7 @@
                 <li data-type="purple" class="is-hidden">
                   <div class="item">
                     <a href="../projects/06-interior/iq_computers.html">
+                      <a onclick="iq_computers()">
                       <div class="pic" style="background-image:url(../images/projects/06-interior/01-preview/iq-01.jpg)"
                         alt="Interior Computer Shop _ IQ COMPUTERS | Novi Sad | author Ilja Mikitisin"></div>
                       <div class="fade"></div>
@@ -571,6 +600,7 @@
                 <li data-type="red" class="is-hidden">
                   <div class="item">
                     <a href="../projects/01-residential/topolska.html">
+                      <a onclick="topolska()">
                       <div class="pic"
                         style="background-image:url(../images/projects/01-residential/01-preview/topolska-01.jpg)"
                         alt="Residential Building _ TOPOLSKA 23 | Belgrade | author Ilja Mikitisin"></div>
@@ -584,6 +614,7 @@
                 <li data-type="blue" class="is-hidden">
                   <div class="item">
                     <a href="../projects/02-commercial/riblja.html">
+                      <a onclick="riblja()"></a>
                       <div class="pic"
                         style="background-image:url(../images/projects/02-commercial/01-preview/riblja-01.jpg)"
                         alt="Square Market _ RIBLJA PIJACA | Novi Sad | author Ilja Mikitisin"></div>
@@ -597,6 +628,7 @@
                 <li data-type="green" class="is-hidden">
                   <div class="item">
                     <a href="../projects/04-culture/kolo.html">
+                      <a onclick="kolo()">
                       <div class="pic"
                         style="background-image:url(../images/projects/04-culture/01-preview/kolo-01.jpg)"
                         alt="Dance Theatre_ KOLO | Belgrade | author Ilja Mikitisin/Igor Mikitisin"></div>
@@ -609,7 +641,8 @@
 
                 <li data-type="yellow" class="is-visible">
                   <div class="item">
-                    <a href="../projects/03-administrative/it_centar.html">
+                    <!-- <a href="../projects/03-administrative/it_centar.html"> -->
+                    <a onclick="pavilion()">
                       <div class="pic"
                         style="background-image:url(../images/projects/03-administrative/01-preview/it_centar-01.jpg)"
                         alt="Office Building _ IT CENTAR | Belgrade | author Igor Mikitisin"></div>
@@ -622,7 +655,8 @@
 
                 <li data-type="black" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/05-public_space/bus_station.html">
+                    <!-- <a href="../projects/05-public_space/bus_station.html"> -->
+                      <a onclick="bus()">
                       <div class="pic"
                         style="background-image:url(../images/projects/05-public_space/01-preview/bus-01.jpg)"
                         alt="Bus Station _ BLOK 42 | Belgrade | author Ilja Mikitisin"></div>
@@ -635,7 +669,8 @@
 
                 <li data-type="purple" class="is-hidden">
                   <div class="item">
-                    <a href="../projects/06-interior/forest_moscow.html">
+                    <!-- <a href="../projects/06-interior/forest_moscow.html"> -->
+                      <a onclick="forest_moscow()">
                       <div class="pic"
                         style="background-image:url(../images/projects/06-interior/01-preview/forest-01.jpg);background-position:center;"
                         alt="Spa Centre _ MOSCOW | Moscow | Ilja Mikitisin"></div>
@@ -737,17 +772,11 @@
   <script src="../js/main.js"></script> <!-- Gem jQuery -->
 
   <script>
-    function minakva() {
-      history.pushState(null, null, '/projects/03-administrative/minaqua.html');
-      console.log('changing');
-      // location.reload()
-    }
+    window.addEventListener('popstate', function (event) {
+      location.reload()
+      console.log('popstate change');
+    })
 
-window.addEventListener('popstate', function (event) {
-  location.reload()
-  console.log('popstate change');
-})
-    
     $(document).ready(function () {
 
       $('.work_icon').on('click', function () {
@@ -755,7 +784,7 @@ window.addEventListener('popstate', function (event) {
         });
       });
     });
-   
+
   </script>
 
 </body>
