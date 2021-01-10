@@ -249,15 +249,6 @@
   <script src="../../js/Pushing_Nav.js"></script> <!-- Resource jQuery -->
   <script src="../../js/Back_To_Top.js"></script> <!-- Resource JavaScript -->
 
-  <!-- <script>
-            $(document).ready(function(){
-
-                $('.work_icon').on('click',function(){
-                    $('.work_list').toggle(1000,function(){
-                     });
-                });
-            });
-        </script> -->
   <script>
     window.addEventListener('popstate', function (event) {
       // The popstate event is fired each time when the current history entry changes.
@@ -277,6 +268,13 @@
       location.pathname = '/work/interior.html'
       // history.pushState(null, null, window.location.pathname);
     }, false);
+    window.onload = function () {
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+      // This is needed if the user scrolls down during page load and you want to make sure the page is scrolled to the top once it's fully loaded. This has Cross-browser support.
+      window.scrollTo(0, 0);
+    };
   </script>
 </body>
 
